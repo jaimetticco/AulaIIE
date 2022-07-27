@@ -14,8 +14,8 @@ CREATE TABLE alumno(
 
 DROP TABLE IF EXISTS detalle_aula CASCADE;
 CREATE TABLE detalle_aula(
-	id_aula BIGSERIAL NOT NULL,
-	id_alumno BIGSERIAL NOT NULL,	
+	id_aula Integer NOT NULL,
+	id_alumno Integer NOT NULL,	
 	FOREIGN KEY(id_aula) REFERENCES aula(id_aula) ON UPDATE CASCADE ON DELETE CASCADE,
 	FOREIGN KEY(id_alumno) REFERENCES alumno(id_alumno) ON UPDATE CASCADE ON DELETE CASCADE,
 	PRIMARY KEY(id_aula, id_alumno)
