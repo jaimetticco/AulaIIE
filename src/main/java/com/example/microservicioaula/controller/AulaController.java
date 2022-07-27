@@ -53,9 +53,6 @@ public class AulaController {
         service.eliminar(id_aula);
         return new ResponseEntity<Void>(HttpStatus.OK);
     }
-
-
-
 }
 
 

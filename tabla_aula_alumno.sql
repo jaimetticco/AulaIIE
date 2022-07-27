@@ -1,3 +1,11 @@
+DROP SCHEMA IF EXISTS `coledio_idat` ;
+
+
+CREATE SCHEMA IF NOT EXISTS `coledio_idat` DEFAULT CHARACTER SET utf8 ;
+USE `coledio_idat` ;
+
+
+
 DROP TABLE IF EXISTS aula CASCADE;
 CREATE TABLE aula(
 	id_aula Integer PRIMARY KEY,
